@@ -19,11 +19,18 @@ export default class Info extends React.Component {
                 </nav>
                 <section className="section">
                     <div className="container">
-                    <h1 style={{"font-size": "40px"}}>Info</h1>
+                    <h1 style={{"fontSize": "40px"}}>Info</h1>
                     <p> Site desenvolvido para aplicação dos conceitos em React.</p>
                        
                     </div>
                 </section>
+                <footer class="footer">
+                        <div class="content has-text-centered" style={{"margin":"400px 80px 100px"}}>
+                            <p>
+                            <strong>WebSite</strong> by <a href="https://github.com/larabeatrizms">Lara Beatriz</a>.
+                            </p>
+                        </div>
+                </footer>
             </div>
         );
     }

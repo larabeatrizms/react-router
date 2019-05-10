@@ -39,7 +39,7 @@ export default class PlacarContainer extends React.Component {
         const estilo = {    float: "left", 
                             "margin": "20px" , 
                             position: "relative"};
-        const estilo2 = { "text-align": "center", "font-family": "'Acme', sans-serif"};
+        const estilo2 = { "textAlign": "center", "fontFamily": "'Roboto Mono', monospace"};
         const estilo3 = { "display": "flex"};
         
         return(
@@ -50,21 +50,21 @@ export default class PlacarContainer extends React.Component {
                         <Info {...info} />
                     </div>
                     <div style={estilo}>
-                        <h3 >Equipe 1</h3>
+                        <h3 ><b>Equipe 1</b></h3>
                         <Equipe   nome={equipe1.nome} 
                                 pontos={this.state.placar_Time1}
                                 marcarPonto={this.incrementarTime1.bind(this)}/>
                     </div>
                     
                     <div style={estilo}>
-                        <h3>Equipe 2</h3>
+                        <h3><b>Equipe 2</b></h3>
                         <Equipe   nome={equipe2.nome} 
                                 pontos={this.state.placar_Time2}
                                 marcarPonto={this.incrementarTime2.bind(this)}/>
                     </div>
 
                     <div style={estilo}>
-                        <h3>Equipe 3</h3>
+                        <h3><b>Equipe 3</b></h3>
                         <Equipe   nome={equipe3.nome} 
                                 pontos={this.state.placar_Time3}
                                 marcarPonto={this.incrementarTime3.bind(this)}/>

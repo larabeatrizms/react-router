@@ -9,7 +9,9 @@ export default class BotaoPonto extends React.Component {
 
     render(){
         return (
-            <button onClick={this.handleClick.bind(this)}>+1 ponto</button>
+            <div>
+                <a class="button is-primary is-inverted is-rounded"  onClick={this.handleClick.bind(this)}>+1 ponto</a>
+            </div>
         );
     }
 }
